@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #1C1C1E;
+    background-color: #000000; /* Changed to black */
     color: #E0E0E0;
 }
 
@@ -59,41 +59,22 @@ header p {
     color: #D3D3D3;
 }
 
-/* Contact Section */
-#contact {
+/* Social Media Icons */
+.social-icons {
     text-align: center;
-    padding: 80px 20px;
-    background-color: #141414;
-}
-
-.section-title {
-    font-size: 2.5em;
-    color: #00BFFF; /* Sky blue */
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    animation: fadeIn 1.5s ease-in-out;
+    padding: 40px 20px;
 }
 
 .social-link {
-    font-size: 2.5em;
-    color: #00BFFF; /* Sky blue */
+    font-size: 1.5em; /* Smaller icon size */
+    color: #FFFFFF; /* White color for icons */
     text-decoration: none;
-    display: inline-block;
+    margin: 0 15px; /* Margin between icons */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-link i {
-    font-size: 2.5em; /* Increased icon size */
-}
-
 .social-link:hover {
-    color: #FFFFFF; /* Change to white on hover */
+    color: #00BFFF; /* Change to sky blue on hover */
     transform: translateY(-5px) scale(1.1);
 }
 
@@ -135,8 +116,7 @@ footer {
         font-size: 1.3em;
     }
 
-    .links {
-        flex-direction: column;
-        gap: 20px;
+    .social-icons {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
     }
 }
