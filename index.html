@@ -3,59 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuad Hasan | Portfolio</title>
+    <meta name="description" content="Portfolio of Fuad Hasan, UI/UX Designer and Flutter Developer.">
+    <title>Fuad Hasan | UI/UX Designer & Flutter Developer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
             text-align: center;
+            padding: 60px 20px;
+            background-color: #1e1e1e;
         }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #F7C04A;
         }
 
-        nav a {
-            margin: 0 15px;
+        header h2 {
+            font-size: 1.5em;
+            color: #9E9E9E;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        .section-title {
+            font-size: 2em;
+            text-align: center;
+            margin: 40px 0;
+            color: #F7C04A;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .links a {
             text-decoration: none;
-            color: #333;
+            font-size: 1.1em;
+            color: #F7C04A;
+            margin: 0 15px;
+            transition: color 0.3s;
         }
 
-        nav a:hover {
-            color: #4CAF50;
-        }
-
-        section {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2 {
-            text-align: center;
+        .links a:hover {
+            color: #ffffff;
         }
 
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #9E9E9E;
+        }
+
+        footer p {
+            margin: 5px;
         }
     </style>
 </head>
@@ -63,48 +78,21 @@
 
     <header>
         <h1>Fuad Hasan</h1>
-        <p>UI/UX Designer | Software Engineer</p>
+        <h2>UI/UX Designer | Flutter Developer</h2>
+        <p>I also love to solve problems. <br> Achieved National Champion in the NASA Space App Challenge.</p>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Fuad Hasan, a passionate UI/UX designer and software engineering student at Daffodil International University. I'm in my 2nd year, 3rd semester, and I have a deep interest in creating innovative designs and applications that enhance user experiences.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>EcoRanger</strong> - A game designed to teach kids environmental science through gameplay.</li>
-            <li><strong>NASA Space App Challenge</strong> - Led the team EcoRangers, achieving National Champion status in the 2024 competition.</li>
-            <li><strong>Nature Village</strong> - A game where players create their own nature village with interactive UI elements.</li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>UI/UX Design</li>
-            <li>Front-end Development (HTML, CSS, JavaScript)</li>
-            <li>Game Design</li>
-            <li>Prototyping</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: fuad.hasan@example.com</p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/fuad-hasan</a></p>
+    <section>
+        <div class="section-title">Connect with me</div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/fh19211321" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/fh19211321" target="_blank">Facebook</a>
+            <a href="mailto:mail.fuadhasan@gmail.com">E-mail</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Fuad Hasan. All rights reserved.</p>
+        <p>© 2024 Fuad Hasan</p>
     </footer>
 
 </body>
