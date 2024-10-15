@@ -23,14 +23,20 @@ header {
 header h1 {
     font-size: 4em;
     font-weight: 700;
-    color: #FFD700; /* Gold Color */
     margin-bottom: 15px;
     animation: slideDown 1s ease-in-out;
+    color: #FFD700;
+    letter-spacing: 2px;
+}
+
+header h1 .highlight {
+    color: #FF6347; /* Tomato color for contrast */
+    font-size: 1.2em;
 }
 
 header h2 {
-    font-size: 1.5em;
-    font-weight: 300;
+    font-size: 1.7em;
+    font-weight: 400;
     color: #B3B3B3;
     margin-bottom: 20px;
 }
@@ -64,24 +70,13 @@ header p {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-.social-link {
-    font-size: 2.5em;
-    color: #FFD700;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    border: 2px solid #FFD700;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+.social-link img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
 }
 
-.social-link i {
-    font-size: 1.5em;
-}
-
-.social-link:hover {
-    background-color: #FFD700;
-    color: #1C1C1E;
+.social-link:hover img {
     transform: scale(1.1);
 }
 
