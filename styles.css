@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #1C1C1E;
-    color: #E0E0E0;
+    background-color: #1C1C1E; /* Dark background for contrast */
+    color: #E0E0E0; /* Light text color */
 }
 
 /* Header */
@@ -25,7 +25,7 @@ header h1 {
     font-weight: 700;
     margin-bottom: 15px;
     animation: slideDown 1s ease-in-out;
-    color: #FFFFFF;
+    color: #00BFFF; /* Sky blue color */
     letter-spacing: 2px;
 }
 
@@ -58,7 +58,7 @@ header p {
 
 .section-title {
     font-size: 2.5em;
-    color: #FFD700;
+    color: #00BFFF; /* Sky blue for section title */
     margin-bottom: 40px;
     animation: fadeIn 1s ease-in-out;
 }
@@ -72,15 +72,19 @@ header p {
 
 .social-link {
     font-size: 2.5em;
-    color: #FFFFFF;
+    color: #00BFFF; /* Sky blue for social icons */
     text-decoration: none;
     display: inline-block;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-link:hover {
-    color: #FF6347;
+    color: #FF6347; /* Tomato color on hover */
     transform: scale(1.1);
+}
+
+.social-link:active {
+    transform: scale(0.95); /* Click animation */
 }
 
 /* Footer */
@@ -90,7 +94,6 @@ footer {
     padding: 20px;
     color: #888;
     font-size: 0.9em;
-    border-top: 2px solid #FFD700;
 }
 
 /* Animations */
@@ -110,6 +113,7 @@ footer {
     100% {
         transform: translateY(0);
     }
+}
 
 /* Responsiveness */
 @media (max-width: 768px) {
