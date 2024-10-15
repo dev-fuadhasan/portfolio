@@ -72,7 +72,7 @@ header p {
     overflow: hidden;
     line-height: 40px; /* Ensure the button height */
     background: #323237; /* Background color */
-    transition: 0.5s; /* Transition speed */
+    transition: 0.2s; /* Transition speed */
     border-radius: 50px;
 }
 
@@ -96,7 +96,7 @@ header p {
     color: #ffffff;
     display: block;
     line-height: 40px; /* Center text vertically */
-    transition: 0.5s; /* Use the same speed as btn-flip */
+    transition: 0.2s; /* Use the same speed as btn-flip */
     position: absolute;
     background: #00BFFF; /* Back hover color */
     content: attr(data-back);
@@ -110,7 +110,7 @@ header p {
     color: #ffffff; /* Front text color */
     display: block;
     line-height: 20px; /* Center text vertically */
-    transition: 0.5s; /* Use the same speed as btn-flip */
+    transition: 0.2s; /* Use the same speed as btn-flip */
     position: relative;
     background: #323237; /* Front background color */
     content: attr(data-front);
