@@ -1,0 +1,216 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%; /* Set the height to 100% */
+}
+
+body {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full height */
+    background-color: #000000; /* Full screen black background */
+    color: #E0E0E0;
+}
+
+/* Header */
+header {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #0D0D0D; /* Adjusted to maintain the dark theme */
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    flex: 1; /* Allow header to expand and fill space */
+}
+
+header h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    animation: slideDown 1s ease-in-out;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+header h1 .highlight {
+    color: #00BFFF; /* Sky blue for contrast */
+    font-size: 1.2em;
+}
+
+header h2 {
+    font-size: 1.7em;
+    font-weight: 400;
+    color: #B3B3B3;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 20px auto;
+    color: #D3D3D3;
+}
+
+/* Download My CV Button Style */
+.btn-flip {
+    display: inline-block;
+    padding: 10px 30px; /* Padding for the button */
+    margin-top: 20px; /* Space between the paragraph and button */
+    font-family: 'Open Sans', sans-serif; /* Ensure the font is set */
+    
+    text-align: center;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    line-height: 40px; /* Ensure the button height */
+    background: #323237; /* Background color */
+    transition: 0.5s; /* Transition speed */
+    border-radius: 50px;
+}
+
+.btn-flip:hover {
+    &:after {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+
+    &:before {
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+    }
+}
+
+.btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #ffffff;
+    display: block;
+    line-height: 40px; /* Center text vertically */
+    transition: 0.5s; /* Use the same speed as btn-flip */
+    position: absolute;
+    background: #00BFFF; /* Back hover color */
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #ffffff; /* Front text color */
+    display: block;
+    line-height: 20px; /* Center text vertically */
+    transition: 0.5s; /* Use the same speed as btn-flip */
+    position: relative;
+    background: #323237; /* Front background color */
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+/* Social Media Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center; /* Align buttons in the center */
+    gap: 10px; /* Space between buttons */
+    padding: 60px 0; /* Padding around the buttons */
+}
+
+.btn {
+    width: 100px; /* Width of the buttons */
+    height: 40px; /* Height of the buttons */
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #00BFFF;
+    outline: none;
+    transition: 1s ease-in-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for the svg to align properly */
+    text-decoration: none; /* Remove underline from links */
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #00BFFF;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 14px; /* Smaller font size */
+    font-weight: 100;
+}
+
+/* Footer */
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+
+    header h2 {
+        font-size: 1.3em;
+    }
+
+    .social-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+
+    .btn {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
