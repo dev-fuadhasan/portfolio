@@ -1,65 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #2f2f2f; /* Dark background */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background */
     color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 header {
-    background-color: #333; /* Darker background for header */
-    padding: 1em;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+h1 {
+    font-size: 3rem;
+    color: #00BFFF; /* Sky blue */
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+p {
+    font-size: 1rem;
+    color: #ffffff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.social-media {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
 }
 
-nav li {
-    margin-right: 20px;
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
-nav a {
-    color: #87ceeb; /* Sky blue color */
-    text-decoration: none;
+.social-icon img {
+    width: 40px; /* Set icon size */
+    height: auto;
 }
 
-nav a:hover {
-    color: #fff;
-}
-
-.hero {
-    background-image: linear-gradient(to bottom, #2f2f2f, #333);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
-    transition: background-position 0.5s ease-out;
-}
-
-.hero:hover {
-    background-position: 100% 100%;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    margin-bottom: 20px;
+.social-icon:hover {
+    transform: scale(1.1); /* Scale effect on hover */
 }
 
 footer {
-    background-color: #333;
-    padding: 1em;
+    margin-top: auto;
+    padding: 1rem;
+    background-color: #1e1e1e; /* Footer background */
     text-align: center;
-    color: #fff;
+    width: 100%;
 }
 
 footer p {
-    margin-bottom: 0;
+    color: #ffffff;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
